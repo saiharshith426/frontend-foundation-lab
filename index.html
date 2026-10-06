@@ -6,42 +6,100 @@
         <title>Stackfolio</title>
     </head>
     <body>
-        <h1>Avala Sai Harshith</h1>
-        <p>I am learning full stack web development.</p>
+        <header>
+            <h1>My Developer Portfolio</h1>
+            <p>A beginner full stack developer building real projects step by step</p>
+        </header>
 
-        <h2>About Me</h2>
-        <p>I am a beginner developer building small web projects as I learn HTML, CSS, and JavaScript. I enjoy turning ideas into simple, working pages and want to grow into a full stack developer.</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Git and GitHub</li>
-            <li>Problem solving</li>
-        </ul>
+        <main>
 
-        <h2>Projects</h2>
-        <p>These are practice projects I am building while I learn.</p>
-        <ul>
-            <li><a href="#">StackFolio</a> - A simple HTML developer portfolio page.</li>
-            <li><a href="#">Landing Page</a> - A basic webpage layout practice project.</li>
-            <li><a href="#">To-Do List</a> - A small JavaScript practice app for adding tasks.</li>
-        </ul>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am a beginner developer building small web projects as I learn HTML, CSS, and JavaScript. I enjoy turning ideas into simple, working pages and want to grow into a full stack developer.</p>
+                 <div>
+            
+                <ul>
+                    <li>About</li>
+                    <li>Skills</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
 
-        <h2>Experience / Education</h2>
-        <ul>
-            <li>Learning full stack web development through hands-on projects.</li>
-            <li>Practicing HTML structure, lists, links, and page sections.</li>
-        </ul>
+            </section>
 
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:learner@example.com">learner@example.com</a></p>
-        <ul>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">LinkedIn</a></li>
-        </ul>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git and GitHub</li>
+                    <li>Problem solving</li>
+                </ul>
+            </section>
+
+             <section id="projects">
+                <h2>Projects</h2>
+                <p>These are practice projects I am building while I learn.</p>
+                <ul>
+                    <li>StackFolio - A simple HTML developer portfolio page.</li>
+                    <li>Landing Page - A basic webpage layout practice project.</li>
+                    <li>To-Do List - A small JavaScript practice app for adding tasks.</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>if you would like to discuss a project or opportunity,fill out this form below.</p>
+                <form>
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full Name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="reason">Reason for contact</label>
+                    <select id="reason" name="reason" required>
+                        <option value="">Select a reason</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="project">Project Discussion</option>
+                        <option value="job">Job Opportunity</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" minlength="100" maxlength="500" required></textarea>
+
+                    <fieldset>
+                        <legend>Preferred Contact Method</legend>
+
+                        <input type="radio" id="remail" name="contact" value="email">
+                        <label for="remail">Email</label>
+                        
+                        <input type="radio" id="phone" name="contact" value="phone">
+                        <label for="phone">Phone</label>
+
+                        <input type="radio" id="linkedin" name="contact" >
+                        <label for="linkedin">LinkedIn</label>
+                    </fieldset>
+
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I agree to be contacted  about my message</label>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+            Built with HTML as part of my full stack learning journey.
+        </footer>
     </body>
 </html>
-
-<!-- emmet shortcut -> built in vs-code/cursor explands small abbreviations into complete html code.   -->
