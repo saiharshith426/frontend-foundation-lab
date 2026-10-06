@@ -1,0 +1,54 @@
+/*
+p{
+    color:brown;
+    line-height:1.5;
+    font-size:16px;
+}
+h1{                          element selector
+    font-weight:bold;
+}
+.section-cards{                         class selector
+    background-color:aqua;
+}
+#contact{                                    id selector      
+    background-color:lightgreen;
+}
+h2,p{                                         multiple element selector
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.section-cards,#contact{
+    
+    font-size:10px;
+} 
+*/
+
+*{
+    box-sizing:border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#222222;
+    background-color:#f4f6f8;
+}
+header,footer{
+    background-color:#1f2937;
+    color:white;
+    text-align:center;
+    padding:24px;
+}
+h2,h3{
+    color:#1f2937;
+}
+a{
+    text-decoration:none;
+    color:#1f2937;
+}
+
+.section-cards{
+    background-color:white;
+    padding:20px;
+    border:12px solid #dddddd;
+    margin-botton:20px;
+    
+}
