@@ -38,18 +38,18 @@ body{
     color:#222222;
     background-color:#f4f6f8;
 }
-header,footer{
+footer{
     background-color:#1f2937;
     color:white;
     text-align:center;
-    padding:24px;
+    padding:16px 24px;
 }
 h2,h3{
     color:#1f2937;
 }
+
 a{
-    text-decoration:none;
-    color:#1f2937;
+    color:#2563eb;
 }
 .section-cards{
     background-color:white;
@@ -84,4 +84,59 @@ button{
     font:inherit;
     cursor:pointer;
     border-radius:4px;
+}
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    padding-left:0;
+    list-style: none;
+}
+#skills li{
+    
+    border-radius:4px;
+    background-color:#e5edff;
+    border:1px solid #c7d2fe;
+    padding:4px 8px;
+}
+nav a{
+    text-decoration:none;
+    color:white;
+
+}
+nav{
+    display:flex;
+    gap:24px;
+}
+.site-header{
+    background-color:#1f2937;
+    color:white;
+    
+    padding:16px 24px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+}
+
+.about-content{
+    display:flex;
+    gap: 24px;
+}
+
+.about-avatar{
+    width:150px;
+    height:150px;
+    flex:0 0 150px;
+    border-radius:50%;
+}
+.projects-grid{
+    display: flex;
+    gap: 20px;
+    margin-top:20px;
+}
+.projects-grid .project-card{
+    flex:1;
+    border:1px solid #cccccc;
+    padding: 16px 24px;
 }
